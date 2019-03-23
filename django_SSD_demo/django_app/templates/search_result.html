@@ -1,0 +1,29 @@
+ 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Detection</title>
+</head>
+<body>
+    <strong>
+        <p style="font-size:25px">This is a demo of object detection task using SSD model.</p>
+    </strong>
+        <p style="font-size:18px">Type your image URL in the input box below,and cilck the detect button,it will gives a detection result.</p><br />
+        <p style="font-size:15px">For example:</p>
+        <p style="font-size:15px">http://img2.ph.126.net/5zrq7kRYretV-Qv65HHLKQ==/1846757322299138714.jpeg </p>
+        <p style="font-size:15px">http://img2.ph.126.net/vxuZJQZLRh3nfa8rX1pq8w==/6597679995612586907.jpg </p>
+        <p style="font-size:15px">http://img0.ph.126.net/YytwzUO2IPN3jHMu4r6wiw==/6597996654961386816.jpg </p>
+    <form action="/search" method="get">
+        <input type="text" name="info" placeholder="Type image url here" size="80" >
+        <input type="submit" value="detect">
+    </form>
+    <b>The detection result of your input image URL is:</b><br />
+    <div style="widt:800px; float:none" align="left">
+        <img src="{{image_url}}"  alt="img" width="500px" border=1 onerror="this.style.display='none' />
+    </div>
+    <strong>    
+       <p style="font-size:20px"><br />we found: <span style="font-size:20px;color:red">{{ predict_name }}</span></p>
+    </strong>
+</body>
+</html>
+  
