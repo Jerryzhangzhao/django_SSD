@@ -6,3 +6,4 @@ This is demo of object detection using django and SSD model.
 - [Online demo](http://47.101.197.166:8081/search-form)
 
 
+[![web page](https://github.com/Jerryzhangzhao/django_SSD/blob/master/img/SSDweb.JPG)](http://47.101.197.166:8081/search-form)
